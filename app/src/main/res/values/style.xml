@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RoundedCorners" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Corners" parent="">
+        <item name="cornerSize">18dp</item>
+    </style>
+
+    <style name="LikeCorners" parent="">
+        <item name="cornerSize">23dp</item>
+    </style>
+
+    <style name="commentCorners" parent="">
+        <item name="cornerSize">18dp</item>
+    </style>
+
+
+
+
+</resources>

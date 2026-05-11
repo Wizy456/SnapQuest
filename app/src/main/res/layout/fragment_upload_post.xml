@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- 2. Centered Header Title -->
+    <TextView
+        android:id="@+id/todayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Upload Photo"
+        android:textColor="@color/strokeColor"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="-0.02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 3. Image Container (Uses Orange Dashed Border) -->
+    <ImageView
+        android:id="@+id/selectedImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/upload_placeholder"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/todayTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 4. Photo Selection Area (Orange Icon + Subtitle) -->
+    <ImageView
+        android:id="@+id/selectImageBtn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/select"
+        app:tint="@color/strokeColor"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@id/tapToSelectText"
+        app:layout_constraintEnd_toEndOf="@id/selectedImage"
+        app:layout_constraintStart_toStartOf="@id/selectedImage"
+        app:layout_constraintTop_toTopOf="@id/selectedImage"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tapToSelectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Tap to select a photo"
+        android:textAlignment="center"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintBottom_toBottomOf="@id/selectedImage"
+        app:layout_constraintEnd_toEndOf="@id/selectedImage"
+        app:layout_constraintStart_toStartOf="@id/selectedImage"
+        app:layout_constraintTop_toBottomOf="@id/selectImageBtn" />
+
+    <ImageView
+        android:id="@+id/btnCancelImage"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="12dp"
+        android:src="@drawable/close"
+        android:visibility="invisible"
+        android:background="@drawable/circle_bg"
+        app:tint="@color/white"
+        android:elevation="6dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@id/selectedImage"
+        app:layout_constraintTop_toTopOf="@id/selectedImage" />
+
+    <!-- 5. Grey Label -->
+    <TextView
+        android:id="@+id/addTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="24dp"
+        android:text="Add Caption"
+        android:textColor="#7C7C7C"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintTop_toBottomOf="@id/selectedImage"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- 6. Taller Caption Box -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/captionCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="12dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/strokeColor"
+        app:strokeWidth="1dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/addTextView">
+
+        <EditText
+            android:id="@+id/captionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="top"
+            android:hint="Write something about your post..."
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:maxLines="6"
+            android:padding="16dp"
+            android:textColor="@color/textColor"
+            android:textColorHint="#ADB5BD"
+            android:textSize="15sp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- 7. Reduced Gap (Button anchored below caption box) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/uploadPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Upload Photo"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        app:backgroundTint="@null"
+        android:background="@drawable/btn_gradient"
+        app:cornerRadius="16dp"
+        app:elevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/captionCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

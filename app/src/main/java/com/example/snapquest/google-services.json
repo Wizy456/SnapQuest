@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "1038873968769",
+    "project_id": "family-album-2697b",
+    "storage_bucket": "family-album-2697b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038873968769:android:cd15a7e89c7b5eb159cd80",
+        "android_client_info": {
+          "package_name": "com.example.snapquest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1038873968769-s9tg08ud6m9or1s7fgri2463p7one3vo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.snapquest",
+            "certificate_hash": "ef00e718f4495b5cc64025ea6a36faa047fb981b"
+          }
+        },
+        {
+          "client_id": "1038873968769-0esc22k13rbeaejl0k3vvc6v13embfod.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsUrVb_Ucp7m5lUnoxT1rW_OdZcgCXuzI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1038873968769-0esc22k13rbeaejl0k3vvc6v13embfod.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038873968769:android:4be492c0e2c069bc59cd80",
+        "android_client_info": {
+          "package_name": "com.familywall.photoalbum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1038873968769-1rrmbmlfj8d47mc9c6m3ogk60ppo514j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.familywall.photoalbum",
+            "certificate_hash": "db8b0f17311a35d614fc0141789475d1f8ebbd94"
+          }
+        },
+        {
+          "client_id": "1038873968769-0esc22k13rbeaejl0k3vvc6v13embfod.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsUrVb_Ucp7m5lUnoxT1rW_OdZcgCXuzI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1038873968769-0esc22k13rbeaejl0k3vvc6v13embfod.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038873968769:android:43f8fe14e0a67a2859cd80",
+        "android_client_info": {
+          "package_name": "com.hidevideos.lockphotos.vault"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1038873968769-0esc22k13rbeaejl0k3vvc6v13embfod.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsUrVb_Ucp7m5lUnoxT1rW_OdZcgCXuzI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1038873968769-0esc22k13rbeaejl0k3vvc6v13embfod.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
